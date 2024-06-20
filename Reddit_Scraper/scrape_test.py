@@ -4,7 +4,7 @@ import csv
 from credentials import p_id, p_agent, p_secret, p_pass
 
 post_search_limit = 10
-sub_name = 'Maine'
+sub_name = 'Stocks'
 csv_file = 'reddit_posts.csv'
 
 #reddit = praw.Reddit(client_id=p_id,
@@ -28,7 +28,7 @@ print(reddit.user.me())
 subreddit = reddit.subreddit(sub_name) 
 
 # Keywords to search for in post titles or selftexts
-keywords = ['moose', 'deer'] 
+keywords = ['TSLA'] 
 print("Keyword Query = {}".format(' '.join(keywords)))
 
 
